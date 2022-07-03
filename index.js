@@ -12,7 +12,7 @@ app.get('/',(req,res) => {
     res.sendFile(__dirname + "/public/index.html")
 })
 
-//get 
+//get request header details
 app.get('/api/whoami',(req,res) => {
     console.log(req.headers)
     res.json({
